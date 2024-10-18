@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="payment-page">
+        <div class="content-page">
+        <div class="selection">
+            <div class="radio">
+                <label>Select Your Payment Method</label><br>
+                <input type="radio" name="radio"><img src="images/gpay.png" style="width: 70px; height: 70px;">
+                <input type="radio" name="radio"><img src="images/payzaap.png" style="width: 70px; height: 70px;">
+                <input type="radio" name="radio"><img src="images/paytm.png" style="width: 70px; height: 50px;">
+                <input type="radio" name="radio"><img src="images/phonepe.png" style="width: 70px; height: 70px;">
+        </div></div>
+        <div class="card-num">
+            <label>Card number</label><br>
+            <input type="text" name="card" id="card" placeholder="1234 4567 8910 1234"><i class='bx bxs-lock-alt'></i>
+        </div>
+        <div class="date">
+                <label>Expire Date</label><br>
+                <div class="expire-date">
+            <input type="text" placeholder="Month"><i class='bx bx-chevron-down'></i>
+            <input type="text"placeholder="Year" style="margin-left: 20px;"><i class='bx bx-chevron-down'></i>
+        </div>
+        </div>
+<div class="code">
+    <label>Security Code</label><br><br>
+    <input type="text" placeholder="123456"><i class='bx bxs-lock-alt'></i>
+</div>
+<div class="checkbox" style="display: flex; margin-top: 30px;">
+<input type="checkbox"><p>Agree with our<span> payment policy</span></p></div>
+<button>CONFIRM PAYMENT</button>
+    </div>
+</div>
+</body>
+</html>

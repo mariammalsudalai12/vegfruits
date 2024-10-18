@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    width: 100%;
+    height: 50px;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: space-between;
+}
+.address{
+    display: flex;
+    margin: 15px 120px;
+    padding-right: 10px;
+}
+.address span{
+    color: white;
+    padding-right: 10px;
+    margin-top: -3px;
+}
+.address p{
+   color: white;
+   font-family: arial;
+   font-size: 13px;
+   padding-right: 10px;
+}
+.address p i{
+    padding-right: 5px;
+}
+.login{
+    display: flex;
+    margin: 15px 120px;
+}
+.login span{
+    color: white;
+    padding-right: 10px;
+}
+.login p{
+     color: white;
+    font-family: arial;
+    font-size: 15px;
+    padding-left: 10px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+   
+}
+.login p i{
+    font-size: 20px;
+    padding-right: 15px;
+}
+.login:hover .login-drop{
+ display: block;
+}
+.login-drop{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    margin-top: 30px;
+    display: none;
+    margin-left: -280px;
+}
+.login-drop h1{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.829);
+    font-family: arial;
+    text-align: center;
+    margin: 20px;
+}
+.input-field input{
+    margin: 20px 30px;
+    height: 45px;
+    width: 320px;
+    color: rgba(0, 0, 0, 0.829);
+    font-size: 14px;
+    font-family: arial;
+    padding-left: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.349);
+    border-radius: 5px;
+}
+.input-field i{
+    margin-left: -60px;
+}
+.login-rem{
+    margin: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.login-rem input{
+    color: rgba(0, 0, 0, 0.829);
+    font-family: arial;
+    font-size: 15px;
+}
+.login-rem p{
+    color: rgba(0, 0, 0, 0.829);
+    font-family: arial;
+    font-size: 14px;
+}
+.login-drop button{
+    width: 330px;
+    height: 45px;
+    font-weight: bold;
+    background-color:rgb(121, 187, 21);
+    border: none;
+    color: white;
+    margin: 20px 30px;
+}
+.login-drop button:hover{
+    background: none;
+    color:green;
+    border: 2px solid green;
+}
+.login-drop h5{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.37);
+    font-family: arial;
+    text-align: center;
+    margin: 10px;
+    font-weight: lighter;
+}
+.login-icon{
+    margin: 20px 30px;
+}
+.login-icon i{
+    width: 167px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.658);
+    color: white;
+    text-align: center;
+    line-height: 38px;
+}
+.login-drop h6{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.37);
+    font-family: arial;
+    text-align: center;
+    margin: 10px;
+    font-weight: lighter;
+}
+.login-drop span{
+    color: rgb(28, 196, 28);
+}
+
+.navbar{
+    width: 100%;
+    height: 90px;
+    display: flex;
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+    margin: 0px 100px;
+    margin-top: -20px;
+}
+.logo{
+    display: flex;
+}
+.logo h1{
+    margin-left: -100px;
+    font-family: "Lobster", sans-serif;
+    color: green;
+    margin-top: 25px;
+}
+.logo h1 span{
+    color: darkorange;
+}
+.nav-menu ul{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 320px;
+    justify-content:space-around;
+}
+.nav-menu li{
+    padding: 12px 25px;
+    position: relative;
+}
+.nav-menu li::after{
+    content: '';
+    position: absolute;
+    background-color: green;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -25px;
+    transition: all 0.5s ease;
+}
+.nav-menu li:hover::after{
+    width: 100%;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: dimgrey;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+   text-align: center;
+   font:caption;
+}
+.nav-menu a:hover{
+   color: green;
+}
+.nav-icons{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.nav-icons i{
+    font-size: 25px;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.849);
+    text-align: center;
+}
+.nav-icons i:hover{
+    transform: scale(1.1);
+    color: green;
+}
+.drop{
+    position: relative;
+    z-index: 1;
+}
+.drpdwn{
+    background-color: lightgreen;
+    display: block;
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -25px;
+    display: none;
+    width: 200px;
+    height: 120px;
+}
+.drpdwn a{
+    display: block;
+    padding: 8px 10px;
+    color: black;
+    text-align: left;
+    width: 150px;
+}
+.drop:hover .drpdwn{
+    display: block;
+}
+.cart-page{
+    display: flex;
+    margin: 50px 310px;
+}
+.cart-img img{
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(128, 128, 128, 0.205);
+}
+.cart-det{
+    margin: 20px 40px;
+    width: 400px;
+}
+.det-head{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+}
+.det-head h1{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(0, 0, 0, 0.842);
+}
+.det-head i{
+    color: darkorange;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.pro-des{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.205); 
+}
+.pro-des h5{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.842);
+    font-family: arial;
+    margin-top: 10px;
+}
+.quantity{
+    font-size: 14px;
+    font-family: arial;
+    padding-right: 20px;
+}
+#quantity{
+    width: 40px;
+    height: 20px;
+    margin-top: 20px;
+}
+.btn button{
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    font-family: arial;
+    margin-top: 20px;
+    border: none;
+}
+.btn button:hover{
+    background: none;
+    color:green;
+    border: 1px solid green;
+}
+.icons img{
+    width: 20px;
+    height: 20px;
+}
